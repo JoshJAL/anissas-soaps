@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import HeaderLink from './HeaderLink';
 import { Oleo_Script_Swash_Caps } from 'next/font/google';
+import DropdownMenu from './DropdownMenu';
 const oleo = Oleo_Script_Swash_Caps({ weight: '400', subsets: ['latin'] });
 
 export default function Header() {
@@ -11,11 +12,14 @@ export default function Header() {
           <Logo />
         </Link>
         <div className='flex-1' />
-        <div className='flex items-center gap-8'>
+        <div className='items-center gap-8 md:flex hidden'>
           <HeaderLink text='Contact' href='/contact' />
           <HeaderLink text='Custom Soaps' href='/custom' />
           <HeaderLink text='Our Story' href='/about' />
           <HeaderLink text='Shop' href='/shop' />
+        </div>
+        <div className='md:hidden block'>
+          <DropdownMenu />
         </div>
       </nav>
     </header>
