@@ -5,7 +5,7 @@ const oleo = Oleo_Script_Swash_Caps({ weight: '400', subsets: ['latin'] });
 
 export default function Header() {
   return (
-    <header className={`w-full bg-green-800/75 backdrop-blur-md p-5 fixed top-0 ${oleo.className}`}>
+    <header className={`w-full bg-green-800/75 backdrop-blur-md p-5 fixed top-0 ${oleo.className} z-50`}>
       <nav className='w-full flex items-center mx-auto max-w-7xl text-2xl'>
         <Link href={'/'} className='group'>
           <Logo />

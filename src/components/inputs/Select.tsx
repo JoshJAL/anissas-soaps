@@ -1,17 +1,16 @@
 import { Oleo_Script_Swash_Caps } from 'next/font/google';
-
 const oleo = Oleo_Script_Swash_Caps({ weight: '400', subsets: ['latin'] });
 
 interface Props {
+  children: React.ReactNode;
   label: string;
-  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
   required?: boolean;
   name: string;
   value: string;
-  placeholder?: string;
 }
 
-export default function TextArea({ label, onChange, required = true, name, value, placeholder }: Props) {
+export default function Select({ children, label, onChange, required = true, name, value }: Props) {
   return (
     <div className='grid md:grid-cols-2 gap-5 md:gap-0 text-xl items-center'>
       <label
@@ -20,15 +19,16 @@ export default function TextArea({ label, onChange, required = true, name, value
       >
         {label}:
       </label>
-      <textarea
-        placeholder={placeholder}
+      <select
         value={value}
         name={name}
         id={name}
         onChange={onChange}
         required={required}
-        className={`outline-none border-2 border-green-800 px-2 py-3 rounded-md`}
-      />
+        className={`cursor-pointer outline-none border-2 border-green-800 px-2 py-3 rounded-md`}
+      >
+        {children}
+      </select>
     </div>
   );
 }

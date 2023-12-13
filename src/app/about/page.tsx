@@ -19,14 +19,20 @@ export default function Page() {
           Anissa&apos;s dedication and craftsmanship..
         </p>
       </div>
-      <p className='text-red-800 text-9xl -mb-10'>&quot;</p>
-      <p className='text-center text-3xl leading-10'>
-        When you choose Anissa&apos;s Soap, you not only treat your skin to a natural and rejuvenating experience, but
-        you also support the preservation of a rich cultural tradition. We invite you to indulge in our beautifully
-        handcrafted soaps, meticulously created in the traditional Lebanese style, and discover the authentic essence of
-        Anissa&apos;s Soap
-      </p>
-      <p className='text-red-800 text-9xl -mb-10 text-right'>&quot;</p>
+      <div className='w-full flex flex-col items-center justify-center gap-12'>
+        <section className='bg-mint md:rounded-tl-[150px] md:rounded-br-[150px] rounded-tl-[75px] rounded-br-[75px] w-screen py-10 px-5'>
+          <div className='w-full flex max-w-7xl mx-auto'>
+            <p className='text-red-800 text-9xl -mb-10'>&quot;</p>
+            <p className='text-center text-3xl leading-10'>
+              When you choose Anissa&apos;s Soap, you not only treat your skin to a natural and rejuvenating experience,
+              but you also support the preservation of a rich cultural tradition. We invite you to indulge in our
+              beautifully handcrafted soaps, meticulously created in the traditional Lebanese style, and discover the
+              authentic essence of Anissa&apos;s Soap
+            </p>
+            <p className='text-red-800 text-9xl -mb-10 text-right'>&quot;</p>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

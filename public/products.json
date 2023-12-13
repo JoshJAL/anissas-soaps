@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Traditional Lebanese Soap",
+    "price": "5.50",
+    "image": "traditional.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Hamsa (Evil Eye) Organic Lebanese Soap",
+    "price": "7.00",
+    "image": "hamsa.png"
+  },
+  {
+    "id": 3,
+    "title": "Angel Organic Lebanese Soap",
+    "price": "7.00",
+    "image": "angel.png"
+  },
+  {
+    "id": 4,
+    "title": "Sun & Moon Organic Lebanese Soap",
+    "price": "7.00",
+    "image": "sunAndMoon.png"
+  }
+]
