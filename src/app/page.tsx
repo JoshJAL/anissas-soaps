@@ -42,9 +42,9 @@ export default function Home() {
             <div className='flex-1' />
             <Link
               className={`${oleo.className} bg-green-800 text-white text-3xl px-2 py-3 w-full rounded-md hover:bg-red-800 hover:text-black transition-all duration-200 ease-in-out`}
-              href={'/about'}
+              href={'/shop'}
             >
-              Learn More
+              Shop Now
             </Link>
           </Showcase>
         </div>
@@ -64,7 +64,7 @@ export default function Home() {
             <Showcase tall title='Traditional Organic Lebanese Soap' image={PurpleSoap} alt='Lavender Soap' priority>
               <Link
                 className={`${oleo.className} bg-green-800 text-white text-3xl px-2 py-3 w-full rounded-md hover:bg-red-800 hover:text-black transition-all duration-200 ease-in-out`}
-                href={'/shop'}
+                href={'/shop/1'}
               >
                 Buy Now
               </Link>

@@ -39,7 +39,7 @@ export default function Page({ params }: { params: { id: string } }) {
   }
 
   return (
-    <div className='grid grid-cols-2 w-full gap-10'>
+    <div className='grid md:grid-cols-2 w-full gap-10'>
       <Image
         priority
         src={`${basePath}${product?.image}`}
