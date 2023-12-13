@@ -17,14 +17,14 @@ export default function Page() {
             key={index}
             className='flex flex-col gap-5 text-center text-2xl hover:bg-mint group transition-all duration-200 ease-in-out p-5 rounded-lg'
           >
-            <div className='object-cover overflow-hidden h-[500px] flex  justify-center rounded-lg shadow-lg'>
+            <div className='overflow-hidden md:h-[500px] h-[300px] flex  justify-center rounded-lg shadow-lg'>
               <Image
                 priority
                 src={`${basePath}${product.image}`}
                 alt={product.title}
                 width={370}
                 height={550}
-                className='w-full object-cover group-hover:scale-110 group-hover:opacity-80 transition-all duration-300 ease-in-out'
+                className='min-w-full object-cover w-auto group-hover:scale-110 group-hover:opacity-80 transition-all duration-300 ease-in-out'
               />
             </div>
             <p>{product.title}</p>
