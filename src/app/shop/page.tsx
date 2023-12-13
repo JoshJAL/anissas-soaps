@@ -17,7 +17,7 @@ export default function Page() {
             key={index}
             className='flex flex-col gap-5 text-center text-2xl hover:bg-mint group transition-all duration-200 ease-in-out p-5 rounded-lg'
           >
-            <div className='overflow-hidden md:h-[500px] h-[300px] flex  justify-center rounded-lg shadow-lg'>
+            <div className='overflow-hidden md:h-[500px] h-[250px] flex  justify-center rounded-lg shadow-lg'>
               <Image
                 priority
                 src={`${basePath}${product.image}`}

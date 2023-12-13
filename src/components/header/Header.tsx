@@ -29,7 +29,7 @@ export default function Header() {
 function Logo() {
   return (
     <div className='rounded-full h-24 w-24 bg-white border-4 border-red-800 flex flex-col items-center justify-center text-xl group-hover:rotate-12 group-hover:scale-110 transition-all duration-200 ease-in-out'>
-      <p className='text-red-800'>Anissas</p>
+      <p className='text-red-800'>Anissa&apos;s</p>
       <p className='text-green-800'>Soap</p>
     </div>
   );
